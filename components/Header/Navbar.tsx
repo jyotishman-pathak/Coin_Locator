@@ -1,6 +1,7 @@
 import React from 'react'
 import { Search, Wallet } from 'lucide-react';
 import { Button } from '../ui/button'
+import { ModeToggle } from '../themes/Themebtn';
 
 const Navbar = () => {
   return (
@@ -21,6 +22,7 @@ const Navbar = () => {
       <div className="flex items-center space-x-4">
         <Button variant="ghost">List Coin</Button>
         <Button variant="ghost">Promote</Button>
+        <ModeToggle/>
         <Button variant="default" className="flex items-center">
           <Wallet className="mr-2 h-4 w-4" />
           Connect Wallet
